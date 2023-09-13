@@ -1,4 +1,6 @@
+import Hero from './components/Hero/Hero'
 import Navbar from './components/Navbar/Navbar'
+import StickyNav from './components/Navbar/StickyNav'
 
 export default function Home() {
   return (
@@ -11,7 +13,7 @@ export default function Home() {
 
       <div>
         <div className='overflow-hidden'>
-          <div className='relative h-screen'>
+          <div className='relative'>
             <img 
               src="/main-bg.png" 
               alt="bg" 
@@ -19,6 +21,12 @@ export default function Home() {
               width='4377' 
             />
           </div>
+
+          <div className='hero-section px-3 '>
+            <Hero/>
+          </div>
+
+          <StickyNav/>
         </div>
       </div>
     </>
